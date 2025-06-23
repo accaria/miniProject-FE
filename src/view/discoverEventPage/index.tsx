@@ -1,3 +1,40 @@
+import Link from "next/link"
+import Header from "../landingPage/components/header"
+import DiscoverEvent from "./components/discoverEventView"
+import BackHomeBar from "@/components/navBar/backHomeBar"
+
+
+export default function DiscoverEventView(){
+
+    return(
+        <>
+        <Header/>
+        <BackHomeBar/>
+        <DiscoverEvent/>
+        <div className="flex flex-col justify-center space-y-5">
+        <Link href={"/DiscoverEvent/FreeEvents"}><div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
+        Free Events
+        </div>
+        </Link>
+        <Link href={"/DiscoverEvent/PaidEvents"}><div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
+        Paid Events
+        </div>
+        </Link>
+        <Link href={"/DiscoverEvent/LocationJakarta"}><div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
+        Located in Jakarta
+        </div>
+        </Link>
+        <div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
+        Located in Bandung
+        </div>
+        </div>
+        </>
+    )
+}
+
+
+
+/*
 "use client"
 import { useState } from "react";
 import BackHomeBar from "@/components/navBar/backHomeBar";
@@ -40,19 +77,15 @@ export default function DiscoverEventView(){
         </button>
         </div>
 
-        
-        
-        </>
-    )
-}
-
-
-
-/*
-<div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
         {selectedTab === 'free' && <EventsListsFree />}
         {selectedTab === 'paid' && <EventsListsPaid />}
         {selectedTab === 'bandung' && <EventsListsBandung />}
         {selectedTab === 'jakarta' && <EventsListsJakarta />}
         </div>
+        
+        </>
+    )
+}
+
 */

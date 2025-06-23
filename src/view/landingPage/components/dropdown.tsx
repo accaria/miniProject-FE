@@ -29,18 +29,23 @@ export default function Dropdown(){
         <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg z-50 border rounded">
           <ul className="flex flex-col">
             <li>
-              <Link href="/landingPage" className="block px-4 py-2 hover:bg-gray-100">
+              <Link href="/About" className="block px-4 py-2 hover:bg-gray-100">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/landingPage" className="block px-4 py-2 hover:bg-gray-100">
+              <Link href="/Services" className="block px-4 py-2 hover:bg-gray-100">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/landingPage" className="block px-4 py-2 hover:bg-gray-100">
+              <Link href="/Contacts" className="block px-4 py-2 hover:bg-gray-100">
                 Contacts
+              </Link>
+            </li>
+            <li>
+              <Link href="/Account" className="block px-4 py-2 hover:bg-gray-100">
+                Account
               </Link>
             </li>
           </ul>

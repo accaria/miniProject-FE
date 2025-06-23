@@ -12,6 +12,7 @@ export interface IEvent{
     eventOrganizer:string,
     eventDate:string,
     eventType:string,
-    eventLocation:string   
+    eventLocation:string,
+    price:number,
 }
 }

@@ -1,4 +1,5 @@
 import { fetchAllEventService } from "@/service/event.service";
+
 import { IEvent } from "@/interface/event.interface";
 import Link from "next/link";
 import RichText from "@/components/contentful/richText";
@@ -15,6 +16,7 @@ export default async function EventsListsFree(){
                     <div>Event Date:{event.fields.eventDate}</div>
                     <div>Published on: {event.fields.publicationDate}</div>
                     <div>Organized by:{event.fields.eventOrganizer}</div>
+                    <div>Price: Free / {event.fields.price} IDR</div>
                     </div>
                 </div>
             )):null}

@@ -1,10 +1,10 @@
 import Link from "next/link"
-export default function BackHomeBar(){
+export default function BackDiscoverEvent(){
     return(
         <>
-        <Link href={"/LandingPage"}>
+        <Link href={"/DiscoverEvent"}>
         <div className="text-center text-[#222432] text-2xl lg:text-3xl font-bold ">
-           &lt; Back to Home
+           &lt; Back to Discover Event
         </div>
         </Link>
         </>

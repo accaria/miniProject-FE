@@ -15,6 +15,7 @@ export default async function EventsListsPaid(){
                     <div>Event Date:{event.fields.eventDate}</div>
                     <div>Published on: {event.fields.publicationDate}</div>
                     <div>Organized by:{event.fields.eventOrganizer}</div>
+                    <div>Price: {event.fields.price} IDR</div>
                     </div>
                 </div>
             )):null}

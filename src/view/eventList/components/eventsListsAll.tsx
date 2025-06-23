@@ -8,8 +8,8 @@ export default async function EventsLists(){
     return(
         <>
         
-        <div className="grid grid-cols-2 lg:grid-cols-3 space-y-10">
-            {allEvents?allEvents.map((event,idx)=>(
+        <div className="grid grid-cols-2 lg:grid-cols-3 text-center space-y-10">
+             {allEvents?.slice(0, 4).map((event, idx) => (
                 <div key={idx}>
                     <div className="flex flex-col justify-center items-center ">
                     <div className="font-bold text-4xl mb-2">{event.fields.title}</div>
@@ -19,7 +19,7 @@ export default async function EventsLists(){
                     <div>Organized by:{event.fields.eventOrganizer}</div>
                     </div>
                 </div>
-            )):null}
+            ))}
         </div>
         </>
     )
