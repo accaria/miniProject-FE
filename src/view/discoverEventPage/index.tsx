@@ -24,9 +24,10 @@ export default function DiscoverEventView(){
         Located in Jakarta
         </div>
         </Link>
-        <div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
+        <Link href={"/DiscoverEvent/LocationBandung"}><div className="bg-amber-500 text-center text-[#222432] text-2xl lg:text-4xl font-bold rounded-2xl mt-5 ">
         Located in Bandung
         </div>
+        </Link>
         </div>
         </>
     )

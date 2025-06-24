@@ -6,7 +6,7 @@ export default function Header(){
     return(
         <>
         <div className="flex flex-col space-y-2">
-        <Link href={"page.tsx"}>
+        <Link href={"/"}>
         <div className="text-center text-white border-2 bg-[#222432]">
         NEW: Create on-brand event pages with our new Box Office Design Tool!
         </div>
