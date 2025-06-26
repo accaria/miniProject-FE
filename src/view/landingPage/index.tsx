@@ -1,3 +1,4 @@
+import EventCreationBar from "@/components/navBar/eventCreationBar";
 import EventsLists from "../eventList/components/eventsListsAll";
 import Header from "./components/header";
 import CatNavBar from "@/components/navBar/categoryNavBar";
@@ -14,6 +15,7 @@ export default function LandingPageView(){
         </div>
         <EventsLists/>
         <CatNavBar/>
+        <EventCreationBar/>
         </>
     )
 }

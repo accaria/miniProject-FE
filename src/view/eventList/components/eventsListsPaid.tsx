@@ -15,6 +15,11 @@ export default async function EventsListsPaid(){
                     <div>Event Date:{event.fields.eventDate}</div>
                     <div>Published on: {event.fields.publicationDate}</div>
                     <div>Organized by:{event.fields.eventOrganizer}</div>
+                    <div>Price: {event.fields.price} IDR</div>
+                    <Link href={"/"}>
+                    {event.fields.price>0 &&(
+                        <button className="bg-amber-500 p-5 rounded-2xl font-bold">Purchase ticket</button>
+                    )}</Link>
                     </div>
                 </div>
             )):null}

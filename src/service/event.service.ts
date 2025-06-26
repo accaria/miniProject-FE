@@ -20,6 +20,7 @@ export async function fetchAllEventService({type,location}={}) {
 }
 
 
+
 /*
 export async function fetchFreeEventService() {
   try {
